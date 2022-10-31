@@ -8,9 +8,9 @@ Cloudflare allows for custom branded error pages to help provide a consistent br
 
 ## Deploying changes
 
-1. Upload the updated HTML to S3.
-2. Grand public read access to the file.
-3. In Cloudflare's Custom Pages UI, select **Edit** for the 500 Class errors. Paste the new S3 URL, select **Preview** & confirm Cloudflare sees the page as valid. Publish the new page.
+1. Upload the updated changes to S3.
+2. Grant public read access to the file.
+3. In Cloudflare's Custom Pages UI, select **Edit** for the 500/1000 Class errors. Paste the new S3 URL, select **Preview** & confirm Cloudflare sees the page as valid. Publish the new page.
 
 ## Resources
 
