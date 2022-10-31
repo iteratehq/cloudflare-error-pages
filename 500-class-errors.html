@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Internal Error – Iterate</title>
+  <link rel="icon" type="image/png" href="https://iterate-assets.s3.amazonaws.com/errorpage/favicon.png" />
+</head>
+
+<style type="text/css">
+  html {
+    height: 100%;
+  }
+
+  body {
+    background: #F3F3F5 url('https://iterate-assets.s3.amazonaws.com/errorpage/background.png') center center no-repeat;
+    background-size: 50% auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: #62626F;
+  }
+
+  h1 {
+    color: #7E57C2;
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    line-height: 58px;
+    text-align: center;
+
+    background-image: -webkit-linear-gradient(0deg, #22A3D0 0%, #8D80CE 50%, #F174EE 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  h2 {
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: -0.11px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 0 0.5em;
+  }
+
+  p {
+    color: #62626F;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 25px;
+    margin: 0 0 1em;
+    text-align: center;
+  }
+
+  button {
+    background-color: #7E57C2;
+    border-radius: 4px;
+    border: 2px solid #7E57C2;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.05);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 8px 16px;
+    position: relative;
+    transition: 0.25s ease;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  button:hover {
+    background-color: #4E3083;
+    border-color: #4E3083;
+  }
+
+  header {
+    background: white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.16);
+    left: 0;
+    padding: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 32px 16px;
+    }
+  }
+
+  footer {
+    bottom: 0;
+    color: #9696a3;
+    font-size: 14px;
+    left: 0;
+    padding: 32px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      position: relative;
+    }
+  }
+
+  @media (max-height: 960px) {
+    footer {
+      position: relative;
+    }
+  }
+
+  .error-message {
+    margin-top: 256px;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .error-message {
+      margin-top: 128px;
+    }
+  }
+
+  .error-trace {
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(189, 189, 193, 0.24), 0 1px 1px -1px rgba(189, 189, 193, 0.22), 0 4px 4px -2px rgba(189, 189, 193, 0.19), 0 11px 11px -3px rgba(189, 189, 193, 0.16);
+    color: #666;
+    font-family: "Menlo", "Monaco", "Andale Mono", "lucida console", "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.6em;
+    margin: 48px auto;
+    overflow-x: auto;
+    padding: 24px;
+    text-align: left;
+    width: 64%;
+    word-break: break-word;
+  }
+
+  @media (max-width: 768px) {
+    .error-trace {
+      width: calc(100% - 80px);
+    }
+  }
+
+  .error-trace h1 {
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0 0 12px;
+  }
+
+  .error-trace p {
+    font-size: inherit;
+    text-align: left;
+  }
+
+  .error-trace ul {
+    border: none;
+    font-size: inherit;
+    margin: 0 0 0 1em;
+    padding: 0;
+    text-align: left;
+  }
+
+  .error-contact {
+    margin-bottom: 48px;
+  }
+</style>
+
+<body>
+  <header>
+    <nav>
+      <a href="https://iteratehq.com">
+        <svg width="70px" height="18px" viewBox="0 0 70 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Errors" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Error-page" transform="translate(-32.000000, -36.000000)">
+              <rect fill="#FFFFFF" x="0" y="0" width="1800" height="1200"></rect>
+              <g id="Group" fill="#000000" fill-rule="nonzero">
+                <g id="Iterate-wordmark/Black" transform="translate(32.000000, 36.000000)">
+                  <path
+                    d="M4.00424,17.7353 L4.00424,0 L-7.10542736e-15,0 L-7.10542736e-15,17.7353 L4.00424,17.7353 Z M13.7479,14.6382 C13.1873,14.8235 12.5733,14.8765 12.1462,14.8765 C11.6657,14.8765 11.3453,14.6912 11.3453,14.1618 L11.3453,7.9147 L14.0949,7.9147 L14.3085,4.84412 L11.3453,4.84412 L11.3453,1.21765 L7.50127,1.74706 L7.50127,4.84412 L5.73941,4.84412 L5.73941,7.9147 L7.50127,7.9147 L7.50127,14.6912 C7.50127,17.0735 8.9428,18 11.4254,18 C12.3064,18 13.3475,17.8147 14.2017,17.5235 L13.7479,14.6382 Z M26.3212,12.6265 L26.3212,9.92647 C26.3212,7.12059 25.3869,4.57941 21.0623,4.57941 C16.7377,4.57941 15.4831,6.96176 15.4831,9.74118 L15.4831,12.7588 C15.4831,15.9353 17.0847,18 21.3025,18 C23.1178,18 25.0131,17.6029 26.1877,17.1794 L25.6271,14.3206 C24.4792,14.6647 22.8775,14.8765 21.6763,14.8765 C19.9144,14.8765 19.3271,14.4794 19.3271,12.9971 L19.3271,12.6265 L26.3212,12.6265 Z M22.6907,9.66176 L19.3271,9.66176 L19.3271,9.10588 C19.3271,8.20588 19.7542,7.46471 21.089,7.46471 C22.4237,7.46471 22.6907,8.20588 22.6907,9.10588 L22.6907,9.66176 Z M47.3835,17.7353 L47.3835,9.50294 C47.3835,5.92941 46.3958,4.57941 41.8843,4.57941 C40.3894,4.57941 38.4407,4.84412 37.2127,5.21471 L37.7199,8.07353 C38.9479,7.83529 40.0958,7.70294 41.2436,7.70294 C43.2992,7.70294 43.5394,8.15294 43.5394,9.47647 L43.5394,10.4559 L40.7364,10.4559 C38.067,10.4559 36.8657,11.4882 36.8657,14.0824 C36.8657,16.2794 37.8534,18 40.2559,18 C41.1369,18 42.4716,17.7353 43.9665,16.9147 L44.2335,17.7353 L47.3835,17.7353 Z M43.5394,14.4794 C42.9521,14.7441 42.3915,14.9294 41.5907,14.9294 C40.8432,14.9294 40.5496,14.6382 40.5496,13.9235 C40.5496,13.2088 40.8699,12.9971 41.6975,12.9971 L43.5394,12.9971 L43.5394,14.4794 Z M56.7267,14.6382 C56.1661,14.8235 55.5521,14.8765 55.125,14.8765 C54.6445,14.8765 54.3242,14.6912 54.3242,14.1618 L54.3242,7.9147 L57.0737,7.9147 L57.2873,4.84412 L54.3242,4.84412 L54.3242,1.21765 L50.4801,1.74706 L50.4801,4.84412 L48.7182,4.84412 L48.7182,7.9147 L50.4801,7.9147 L50.4801,14.6912 C50.4801,17.0735 51.9216,18 54.4042,18 C55.2852,18 56.3263,17.8147 57.1805,17.5235 L56.7267,14.6382 Z M69.3,12.6265 L69.3,9.92647 C69.3,7.12059 68.3657,4.57941 64.0411,4.57941 C59.7165,4.57941 58.4619,6.96176 58.4619,9.74118 L58.4619,12.7588 C58.4619,15.9353 60.0636,18 64.2814,18 C66.0966,18 67.992,17.6029 69.1665,17.1794 L68.6059,14.3206 C67.4581,14.6647 65.8564,14.8765 64.6551,14.8765 C62.8932,14.8765 62.3059,14.4794 62.3059,12.9971 L62.3059,12.6265 L69.3,12.6265 Z M65.6695,9.66176 L62.3059,9.66176 L62.3059,9.10588 C62.3059,8.20588 62.7331,7.46471 64.0678,7.46471 C65.4025,7.46471 65.6695,8.20588 65.6695,9.10588 L65.6695,9.66176 Z M35.8513,5.31399 L36.3361,8.19806 C34.506,8.76321 33.2352,9.28583 32.4076,9.86818 L32.4076,17.4706 L28.5636,17.4706 L28.5636,4.57941 L31.7669,4.57941 L32.0146,6.46597 C32.8154,5.93655 34.0623,5.69252 35.8513,5.31399 Z"
+                    id="Iterate"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <section class="error-message">
+    <h1>Oh, biscuits!</h1>
+    <h2>Internal Error</h2>
+    <p>We encountered an error processing your request. Please try again in a few seconds.</p>
+
+    <div class="error-trace">
+      ::CLOUDFLARE_ERROR_500S_BOX::
+    </div>
+
+    <div class="error-contact">
+      <p>
+        If the problem persists, please contact
+        <a href="mailto:support@iteratehq.com">support@iteratehq.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div>&copy; Iterate 2016–<span id="copyright-date"></span></div>
+  </footer>
+
+  <script>
+    document.getElementById(
+      "copyright-date"
+    ).innerHTML = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
